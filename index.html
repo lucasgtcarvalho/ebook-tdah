@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Completo para Pais sobre TDAH</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #005f73, #0a9396);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Seção de destaque */
+        .hero {
+            background-color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .hero-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .hero-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+            text-align: left;
+        }
+        
+        .hero-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #005f73;
+        }
+        
+        .hero-text p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .price-tag {
+            display: inline-block;
+            background-color: #ee9b00;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        /* Botão de compra */
+        .btn {
+            display: inline-block;
+            background-color: #ee9b00;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #e76f51;
+            transform: scale(1.05);
+        }
+        
+        .btn-large {
+            font-size: 1.3rem;
+            padding: 18px 40px;
+        }
+        
+        /* Seção de benefícios */
+        .benefits {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .benefits h2 {
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: #005f73;
+            text-align: center;
+        }
+        
+        .benefits-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .benefit-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: #0a9396;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #005f73;
+        }
+        
+        /* Seção de conteúdo */
+        .content {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+        
+        .content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #005f73;
+            text-align: center;
+        }
+        
+        .content-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .content-item:hover {
+            transform: translateX(10px);
+        }
+        
+        .content-icon {
+            color: #0a9396;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            min-width: 30px;
+        }
+        
+        .content-text h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #005f73;
+        }
+        
+        /* Seção de atividades */
+        .activities {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .activities h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #005f73;
+            text-align: center;
+        }
+        
+        .activities p {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .activity-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .activity-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #005f73;
+        }
+        
+        /* Seção de depoimentos */
+        .testimonials {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+        
+        .testimonials h2 {
+            font-size: 2.2rem;
+            margin-bottom: 50px;
+            color: #005f73;
+        }
+        
+        .testimonial-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #005f73;
+        }
+        
+        /* Seção de garantia */
+        .guarantee {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .guarantee h2 {
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            color: #005f73;
+        }
+        
+        .guarantee p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .guarantee-icon {
+            font-size: 4rem;
+            color: #0a9396;
+            margin-bottom: 20px;
+        }
+        
+        /* Seção de chamada final */
+        .cta {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #005f73, #0a9396);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+        }
+        
+        /* Animações */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Ícones */
+        .check-icon::before {
+            content: "✓";
+            color: #0a9396;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Guia Completo para Pais sobre TDAH</h1>
+            <p>Transforme os desafios do TDAH em oportunidades de crescimento para seu filho</p>
+        </div>
+    </header>
+    
+    <!-- Seção de destaque -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="capa_tdah.png" alt="Guia Completo para Pais sobre TDAH" class="hero-image">
+                <div class="hero-text">
+                    <h2>Do Básico ao Avançado: Tudo o que você precisa saber para apoiar seu filho com TDAH</h2>
+                    <p>Este guia completo foi criado especialmente para pais e cuidadores que buscam entender profundamente o Transtorno do Déficit de Atenção e Hiperatividade e, mais importante, aprender técnicas práticas e eficazes para apoiar o desenvolvimento de seus filhos.</p>
+                    <div class="price-tag">R$ 37,00</div>
+                    <a href="https://pay.hotmart.com/K100094948R" class="btn btn-large pulse">QUERO ESTE GUIA AGORA!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de benefícios -->
+    <section class="benefits">
+        <div class="container">
+            <h2>Por que este guia é essencial para você?</h2>
+            <div class="benefits-container">
+                <div class="benefit-item">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Conhecimento Atualizado</h3>
+                    <p>Informações baseadas nas mais recentes pesquisas científicas e recomendações de especialistas em TDAH.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🧩</div>
+                    <h3>Abordagem Prática</h3>
+                    <p>Mais de 30 atividades testadas que você pode implementar imediatamente no dia a dia com seu filho.</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌈</div>
+                    <h3>Linguagem Acessível</h3>
+                    <p>Conteúdo explicado de forma clara e direta, sem jargões técnicos complicados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de conteúdo -->
+    <section class="content">
+        <div class="container">
+            <h2>O que você vai encontrar neste e-book:</h2>
+            <div class="content-list">
+                <div class="content-item">
+                    <div class="content-icon">📋</div>
+                    <div class="content-text">
+                        <h3>Compreensão clara e atualizada sobre o TDAH</h3>
+                        <p>Entenda o que realmente acontece no cérebro da criança com TDAH, os diferentes subtipos e como identificar os sinais precocemente.</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-icon">🔍</div>
+                    <div class="content-text">
+                        <h3>O caminho do diagnóstico explicado passo a passo</h3>
+                        <p>Saiba exatamente o que esperar das avaliações, quais profissionais procurar e como interpretar os resultados.</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-icon">🏫</div>
+                    <div class="content-text">
+                        <h3>Estratégias comprovadas para o ambiente escolar</h3>
+                        <p>Descubra como trabalhar em parceria com professores e garantir que seu filho receba o suporte necessário para prosperar academicamente.</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-icon">💊</div>
+                    <div class="content-text">
+                        <h3>Guia completo sobre medicação e tratamentos</h3>
+                        <p>Informações baseadas em evidências sobre as opções de tratamento disponíveis, seus benefícios e considerações importantes.</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-icon">🧠</div>
+                    <div class="content-text">
+                        <h3>Técnicas de gerenciamento comportamental</h3>
+                        <p>Estratégias eficazes para lidar com os comportamentos desafiadores e promover a autodisciplina.</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div class="content-icon">👨‍👩‍👧‍👦</div>
+                    <div class="content-text">
+                        <h3>Ferramentas para toda a família</h3>
+                        <p>Dicas para manter o equilíbrio familiar, apoiar irmãos e fortalecer a comunicação em casa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de atividades -->
+    <section class="activities">
+        <div class="container">
+            <h2>Atividades práticas que transformam</h2>
+            <p>O guia inclui mais de 30 atividades cuidadosamente desenvolvidas para fortalecer áreas específicas de desenvolvimento:</p>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>Caça ao Tesouro com Pistas Sequenciais</h3>
+                    <p>Fortalece a atenção sustentada e o seguimento de instruções.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Técnica do Pomodoro Adaptada</h3>
+                    <p>Ensina gerenciamento de tempo e aumenta a capacidade de concentração.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Circuito de Obstáculos Caseiro</h3>
+                    <p>Canaliza energia e trabalha coordenação motora de forma divertida.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Jogo "Programando o Robô"</h3>
+                    <p>Desenvolve planejamento, sequenciamento e comunicação clara.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Calendário Visual Interativo</h3>
+                    <p>Promove noção de tempo, planejamento e autonomia.</p>
+                </div>
+                <div class="activity-card">
+                    <h3>Teatro de Emoções</h3>
+                    <p>Desenvolve reconhecimento e expressão de emoções.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de depoimentos -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que dizem os pais que já adquiriram</h2>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Depois de meses tentando entender como ajudar meu filho com TDAH, finalmente encontrei um guia que realmente funciona. As atividades são simples de implementar e fizeram uma diferença enorme no comportamento e na autoestima dele."</p>
+                <p class="testimonial-author">- Maria S., mãe de Pedro (8 anos)</p>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"Este guia mudou nossa dinâmica familiar completamente. Agora entendemos melhor nosso filho e conseguimos apoiá-lo de forma mais eficaz. As estratégias para a escola foram particularmente úteis!"</p>
+                <p class="testimonial-author">- Roberto L., pai de Gabriel (10 anos)</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção de garantia -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-icon">🛡️</div>
+            <h2>Garantia de Satisfação</h2>
+            <p>Estamos tão confiantes na qualidade do nosso guia que oferecemos garantia de satisfação. Se você não ficar completamente satisfeito com o conteúdo, a Hotmart oferece política de reembolso conforme seus termos e condições.</p>
+        </div>
+    </section>
+    
+    <!-- Seção de chamada final -->
+    <section class="cta">
+        <div class="container">
+            <h2>Transforme a jornada do seu filho hoje mesmo!</h2>
+            <p>Não espere mais para ter acesso às estratégias e ferramentas que podem fazer toda a diferença no desenvolvimento e bem-estar do seu filho com TDAH.</p>
+            <div class="price-tag">Apenas R$ 37,00</div>
+            <a href="https://pay.hotmart.com/K100094948R" class="btn btn-large pulse">QUERO ESTE GUIA AGORA!</a>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Todos os direitos reservados.</p>
+            <p>Este material é protegido por direitos autorais e não pode ser reproduzido sem autorização.</p>
+        </div>
+    </footer>
+</body>
+</html>
